@@ -1,20 +1,28 @@
-# Film Profit Analysis and Visualization
+# Comprehensive Film Analysis and Visualization Project
 
-This project provides a Python-based analysis of a movie dataset to determine the most profitable movies and visualize the relationship between budget and revenue. The dataset includes various movie attributes such as budget, genres, revenue, and more.
+This project aims to provide an in-depth analysis and visualization of a movie dataset, exploring various aspects such as profitability, popularity, genre distribution, director success, and more. The dataset includes a wide range of movie attributes such as budget, genres, revenue, popularity, vote count, and more.
 
-## Features
-- Calculation of profit for each movie in the dataset.
+## Current Features
+- Profit calculation for each movie in the dataset.
 - Identification and listing of the most profitable movies.
-- Visualization of the relationship between budget and revenue using scatter plots.
-- Advanced visualization using seaborn and plotly for a more engaging and understandable representation of data.
+- Visualization of the relationship between budget and revenue.
+- Calculation of a popularity score for each movie, considering factors such as popularity, vote average, revenue, budget, and vote count.
+- Identification and listing of the most popular movies based on the calculated popularity score.
+- Visualization of the relationship between popularity and vote average.
 
-![image](https://github.com/EmreOzdemiroglu/datav_movies/assets/31511271/bf336c24-fc83-45e6-b78c-92d88f6c5837)
+## Future Features
+In the future, this project will be expanded to include the following analyses:
 
-![image](https://github.com/EmreOzdemiroglu/datav_movies/assets/31511271/0dab5a01-b8d9-4e73-8371-34745ce8ee7d)
-
+- Genre Analysis: Using the genre information of the movies, the most popular movie genres will be determined and the popularity of genres over time will be analyzed.
+- Director Analysis: Using the director information of the movies, the directors who have made the most films or generated the highest revenue will be identified.
+- Time Series Analysis: Using the release date information of the movies, various attributes (such as budget, revenue, popularity, vote average) will be analyzed for changes over time.
+- Language Distribution and Genre Popularity: Histograms and bar graphs will be created according to the original languages and genres of the movies, showing which languages and genres produce and are popular in the most films.
+- Revenue Over the Years: A line graph showing total revenue by release date (year) can be created. This will show which years were the most profitable over time.
+- Relationship Between Vote Average and Vote Count: A scatter plot showing the relationship between vote average and vote count can be created. This will show whether a higher vote count is associated with a higher vote average.
+- Success of Directors: A bar graph showing the top 10 directors who have generated the most revenue can be created. This will show which directors are the most profitable.
 
 ## Usage
-The main script can be run with a dataset in CSV format. The dataset should include columns for 'budget', 'revenue', and 'title' at a minimum. The script will calculate the profit for each movie, sort the movies by profit, and then create visualizations.
+The main script can be run with a dataset in CSV format. The dataset should include columns for 'budget', 'revenue', 'title', 'popularity', 'vote_average', and 'vote_count' at a minimum. The script will calculate the profit and popularity score for each movie, sort the movies by profit and popularity, and then create visualizations.
 
 ## Dependencies
 - Python
@@ -25,6 +33,7 @@ The main script can be run with a dataset in CSV format. The dataset should incl
 
 ## Installation
 To install the necessary libraries, you can use pip:
+
 ```
 pip install pandas matplotlib seaborn plotly
 ```
