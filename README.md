@@ -10,6 +10,13 @@ This project aims to provide an in-depth analysis and visualization of a movie d
 - Identification and listing of the most popular movies based on the calculated popularity score.
 - Visualization of the relationship between popularity and vote average.
 
+## Images
+
+![image](https://github.com/EmreOzdemiroglu/CineDataViz/assets/31511271/6aed0d6f-7df5-41d8-afec-83f295a76a97)
+![image](https://github.com/EmreOzdemiroglu/CineDataViz/assets/31511271/18d184d3-e139-455a-acb6-5f9e5ddf3d27)
+![image](https://github.com/EmreOzdemiroglu/CineDataViz/assets/31511271/a12b584a-58ce-4ebc-a7c6-582d0242ab0f)
+
+
 ## Future Features
 In the future, this project will be expanded to include the following analyses:
 
