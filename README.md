@@ -38,6 +38,11 @@ To install the necessary libraries, you can use pip:
 pip install pandas matplotlib seaborn plotly
 ```
 
+## Dataset Source
+
+The dataset used in this project is sourced from Kaggle, a popular platform for data science competitions and datasets. The specific dataset used can be found at the following link: [Movies Dataset](https://www.kaggle.com/datasets/utkarshx27/movies-dataset). It includes a wide range of movie attributes such as budget, genres, revenue, popularity, vote count, and more.
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
