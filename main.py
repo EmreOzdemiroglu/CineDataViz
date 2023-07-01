@@ -3,48 +3,36 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
-# Veri setini yükle
+# Load the dataset
 df = pd.read_csv('movie_dataset.csv')
 
-# Karı hesapla
+# Calculate profit
 df['profit'] = df['revenue'] - df['budget']
 
-# Tüm filmleri karlarına göre sırala
+# Sort all movies by their profit
 df_sorted = df.sort_values('profit', ascending=False)
 
-# Karlarına göre filmleri görselleştir
+# Visualize movies by their profit
 plt.figure(figsize=(12, 8))
 sns.barplot(x=df_sorted['profit'].head(10), y=df_sorted['title'].head(10))
-plt.xlabel('Kar')
-plt.ylabel('Film Başlığı')
-plt.title('En Karlı Filmler')
+plt.xlabel('Profit')
+plt.ylabel('Movie Title')
+plt.title('Most Profitable Movies')
 plt.show()
 
-# Bütçe ile gelir arasındaki ilişkiyi görselleştir
-fig = px.scatter(df, x='budget', y='revenue', hover_data=['title'], title='Film Bütçesi ve Geliri Arasındaki İlişki')
+# Visualize the relationship between budget and revenue
+fig = px.scatter(df, x='budget', y='revenue', hover_data=['title'], title='Relationship Between Movie Budget and Revenue')
 fig.show()
 
+# Calculate popularity score
+df['popularity_score'] = df['popularity'] * df['vote_average'] * df['revenue'] * df['budget'] * df['vote_count']
 
-"""import pandas as pd
-import matplotlib.pyplot as plt
+# Determine the most popular movies
+top_popular_movies = df.sort_values('popularity_score', ascending=False).head(10)
 
-# Veri setini yükle
-df = pd.read_csv('movie_dataset.csv')
-
-# Karı hesapla
-df['profit'] = df['revenue'] - df['budget']
-
-# En karlı filmleri belirle
-most_profitable_movies = df.sort_values('profit', ascending=False).head(10)
-
-print("En karlı filmler:")
-print(most_profitable_movies[['title', 'profit']])
-
-# Bütçe ile gelir arasındaki ilişkiyi görselleştir
-plt.figure(figsize=(10, 6))
-plt.scatter(df['budget'], df['revenue'], alpha=0.5)
-plt.title('Film Bütçesi ve Geliri Arasındaki İlişki')
-plt.xlabel('Bütçe')
-plt.ylabel('Gelir')
-plt.show()
-"""
+# Popularity score graph
+fig = px.bar(top_popular_movies, x='original_title', y='popularity_score', 
+             hover_data=['popularity', 'vote_average', 'revenue', 'budget', 'vote_count'], color='popularity_score',
+             labels={'popularity_score':'Popularity Score', 'original_title':'Movie'},
+             title='Most Popular Films')
+fig.show()
