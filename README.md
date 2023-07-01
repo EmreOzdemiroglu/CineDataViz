@@ -8,6 +8,11 @@ This project provides a Python-based analysis of a movie dataset to determine th
 - Visualization of the relationship between budget and revenue using scatter plots.
 - Advanced visualization using seaborn and plotly for a more engaging and understandable representation of data.
 
+![image](https://github.com/EmreOzdemiroglu/datav_movies/assets/31511271/bf336c24-fc83-45e6-b78c-92d88f6c5837)
+
+![image](https://github.com/EmreOzdemiroglu/datav_movies/assets/31511271/0dab5a01-b8d9-4e73-8371-34745ce8ee7d)
+
+
 ## Usage
 The main script can be run with a dataset in CSV format. The dataset should include columns for 'budget', 'revenue', and 'title' at a minimum. The script will calculate the profit for each movie, sort the movies by profit, and then create visualizations.
 
