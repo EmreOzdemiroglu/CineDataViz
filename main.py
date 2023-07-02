@@ -36,3 +36,37 @@ fig = px.bar(top_popular_movies, x='original_title', y='popularity_score',
              labels={'popularity_score':'Popularity Score', 'original_title':'Movie'},
              title='Most Popular Films')
 fig.show()
+
+# Fill NaN with 'Unknown' and convert to string
+df['genres'] = df['genres'].fillna('Unknown').astype(str)
+
+# Now apply the split operation
+df['genres'] = df['genres'].apply(lambda x: x.split(','))
+
+# Convert release_date to datetime
+df['release_date'] = pd.to_datetime(df['release_date'])
+
+# Explode the dataframe on genres
+df_exploded = df.explode('genres')
+
+# Calculate the top 10 genres
+top_10_genres = df_exploded['genres'].value_counts().head(10).index.tolist()
+
+# Filter the dataframe to include only the top 10 genres
+df_top_10_genres = df_exploded[df_exploded['genres'].isin(top_10_genres)]
+
+# Group by genres and year, then count the number of movies
+genre_popularity = df_top_10_genres.groupby([df_top_10_genres['release_date'].dt.year, 'genres']).size().reset_index(name='counts')
+
+# Pivot the data for visualization
+genre_popularity_pivot = genre_popularity.pivot(index='release_date', columns='genres', values='counts').fillna(0)
+
+# Plot the data
+plt.figure(figsize=(10, 8))
+for genre in genre_popularity_pivot.columns:
+    plt.plot(genre_popularity_pivot.index, genre_popularity_pivot[genre], label=genre)
+plt.legend()
+plt.xlabel('Year')
+plt.ylabel('Number of Movies')
+plt.title('Popularity of Top 10 Genres Over Time')
+plt.show()
