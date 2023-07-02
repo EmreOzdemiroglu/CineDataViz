@@ -15,18 +15,21 @@ This project aims to provide an in-depth analysis and visualization of a movie d
 ![image](https://github.com/EmreOzdemiroglu/CineDataViz/assets/31511271/6aed0d6f-7df5-41d8-afec-83f295a76a97)
 ![image](https://github.com/EmreOzdemiroglu/CineDataViz/assets/31511271/18d184d3-e139-455a-acb6-5f9e5ddf3d27)
 ![image](https://github.com/EmreOzdemiroglu/CineDataViz/assets/31511271/a12b584a-58ce-4ebc-a7c6-582d0242ab0f)
-
+![image](https://github.com/EmreOzdemiroglu/CineDataViz/assets/31511271/d2df66ae-4978-4357-8780-b531a2c4fbd5)
 
 ## Future Features
 In the future, this project will be expanded to include the following analyses:
 
-- Genre Analysis: Using the genre information of the movies, the most popular movie genres will be determined and the popularity of genres over time will be analyzed.
-- Director Analysis: Using the director information of the movies, the directors who have made the most films or generated the highest revenue will be identified.
-- Time Series Analysis: Using the release date information of the movies, various attributes (such as budget, revenue, popularity, vote average) will be analyzed for changes over time.
-- Language Distribution and Genre Popularity: Histograms and bar graphs will be created according to the original languages and genres of the movies, showing which languages and genres produce and are popular in the most films.
-- Revenue Over the Years: A line graph showing total revenue by release date (year) can be created. This will show which years were the most profitable over time.
-- Relationship Between Vote Average and Vote Count: A scatter plot showing the relationship between vote average and vote count can be created. This will show whether a higher vote count is associated with a higher vote average.
-- Success of Directors: A bar graph showing the top 10 directors who have generated the most revenue can be created. This will show which directors are the most profitable.
+- [x] Genre Analysis: Using the genre information of the movies, the most popular movie genres have been determined and the popularity of genres over time has been analyzed.
+- [ ] Director Analysis: Using the director information of the movies, the directors who have made the most films or generated the highest revenue will be identified.
+- [ ] Time Series Analysis: Using the release date information of the movies, various attributes (such as budget, revenue, popularity, vote average) will be analyzed for changes over time.
+- [ ] Language Distribution and Genre Popularity: Histograms and bar graphs will be created according to the original languages and genres of the movies, showing which languages and genres produce and are popular in the most films.
+- [ ] Revenue Over the Years: A line graph showing total revenue by release date (year) can be created. This will show which years were the most profitable over time.
+- [ ] Relationship Between Vote Average and Vote Count: A scatter plot showing the relationship between vote average and vote count can be created. This will show whether a higher vote count is associated with a higher vote average.
+- [ ] Success of Directors: A bar graph showing the top 10 directors who have generated the most revenue can be created. This will show which directors are the most profitable.
+- [ ] Creation of More Complex Graphs: More complex graphs that provide deeper insights into the data will be created.
+- [ ] Dashboard Creation: A dashboard that presents all the visualizations and analyses in a user-friendly manner will be created.
+
 
 ## Usage
 The main script can be run with a dataset in CSV format. The dataset should include columns for 'budget', 'revenue', 'title', 'popularity', 'vote_average', and 'vote_count' at a minimum. The script will calculate the profit and popularity score for each movie, sort the movies by profit and popularity, and then create visualizations.
