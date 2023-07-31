@@ -1,6 +1,8 @@
-# Comprehensive Film Analysis and Visualization Project
+# CineDataViz - A Comprehensive Movie Dataset Analysis
 
-This project aims to provide an in-depth analysis and visualization of a movie dataset, exploring various aspects such as profitability, popularity, genre distribution, director success, and more. The dataset includes a wide range of movie attributes such as budget, genres, revenue, popularity, vote count, and more.
+CineDataViz is a data analysis project focused on exploring and understanding a comprehensive movie dataset. The dataset includes various details about movies, such as budget, revenue, genres, director, release date, original language, vote average, and vote count.
+
+This project provides a detailed analysis of the dataset using various data analysis techniques and visualizations. It aims to uncover patterns, trends, and relationships within the data, providing valuable insights into the movie industry.
 
 ## Dependencies
 - Python
@@ -24,11 +26,7 @@ pip install pandas matplotlib numpy plotly
 
 3. Run all the cells in the notebook to see the results of the analysis.
 
-# CineDataViz - A Comprehensive Movie Dataset Analysis
 
-CineDataViz is a data analysis project focused on exploring and understanding a comprehensive movie dataset. The dataset includes various details about movies, such as budget, revenue, genres, director, release date, original language, vote average, and vote count.
-
-This project provides a detailed analysis of the dataset using various data analysis techniques and visualizations. It aims to uncover patterns, trends, and relationships within the data, providing valuable insights into the movie industry.
 
 ## Features
 
