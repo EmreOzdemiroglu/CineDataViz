@@ -60,27 +60,6 @@ pip install pandas matplotlib numpy plotly
 
 15. **Dashboard Creation**: Creates a dashboard that presents all the visualizations and analyses in a user-friendly manner.
 
-# Future Features for CineDataViz
-
-1. **Movie Recommendation System**: Implement a movie recommendation system based on different parameters such as genre, director, actors, and user ratings. This could provide personalized movie recommendations to users based on their past viewing history and preferences.
-
-2. **Sentiment Analysis of Movie Reviews**: Incorporate a sentiment analysis component that analyzes movie reviews to determine the overall audience sentiment towards a movie. This could provide additional insights into a movie's reception beyond numerical ratings.
-
-3. **Box Office Prediction**: Develop a machine learning model to predict a movie's box office performance based on features such as budget, genre, director, and cast. This could be a valuable tool for producers and investors.
-
-4. **Dashboard Enhancement**: Enhance the dashboard with additional interactive features such as filters, dropdowns, and sliders that allow users to customize the visualizations based on their interests. 
-
-5. **Actor Analysis**: Similar to the director analysis, perform an actor analysis to identify the actors who have been in the most films or generated the highest revenue. 
-
-6. **Movie Era Comparison**: Compare different eras of film (e.g., silent era, golden age, modern era) in terms of revenue, budget, genres, directors, and actors. 
-
-7. **Geographical Analysis**: If data is available, perform a geographical analysis to visualize the revenue or popularity of movies in different countries or regions.
-
-8. **Integration with External Databases**: Integrate the application with external databases or APIs to fetch real-time data or additional data that is not present in the current dataset.
-
-9. **User Account and Authentication System**: Implement a user account and authentication system that allows users to save their preferences, bookmark their favorite movies, and share their views or reviews.
-
-10. **Movie Trivia**: Include interesting trivia or facts about movies, which could make the application more engaging for users.
 
 ## Dataset Source
 
